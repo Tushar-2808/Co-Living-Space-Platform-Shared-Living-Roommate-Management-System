@@ -8,7 +8,7 @@ NestMate is a modern co-living platform designed to simplify room searching, ten
 
 - **Frontend:** [nestmatesharing.netlify.app](https://nestmatesharing.netlify.app)
 - **API (Backend):** [co-living-space-platform-shared-living.onrender.com](https://co-living-space-platform-shared-living.onrender.com/api/health)
-- **GitHub Repository:** [Unified Mentor](https://github.com/Tushar-2808/Co-Living-Space-Platform-Shared-Living-Roommate-Management-System)
+- **GitHub Repository:** [Co-Living-Space-Platform-Shared-Living-Roommate-Management-System](https://github.com/Tushar-2808/Co-Living-Space-Platform-Shared-Living-Roommate-Management-System)
 
 ---
 
