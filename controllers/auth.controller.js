@@ -6,10 +6,12 @@ const signToken = (id) => jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: 
 
 const setCookieAndRespond = (res, user, statusCode = 200) => {
     const token = signToken(user._id);
+    const isProd = process.env.NODE_ENV === 'production';
+
     res.cookie('token', token, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
-        sameSite: 'lax', // Changed from strict to lax for better localhost compatibility
+        secure: isProd,
+        sameSite: isProd ? 'none' : 'lax', // 'none' required for cross-site in prod
         maxAge: 7 * 24 * 60 * 60 * 1000,
     });
     res.status(statusCode).json({ success: true, user });
